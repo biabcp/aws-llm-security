@@ -1,0 +1,5 @@
+cd scripts
+bash deploy.sh
+
+cd scripts
+bash teardown.sh
