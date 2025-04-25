@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# Exit if any command fails
+set -e
+
+echo "🚀 Starting Lambda deployment..."
+
+# Variables
+LAMBDA_NAME="secure-llm-input-validator"
+ZIP_FILE="../lambda/input_validator.zip"
+
+# Check if zip file exists
+if [ ! -f "$ZIP_FILE" ]; then
+  echo "❌ Zip file not found at $ZIP_FILE. Please zip your Lambda code first."
+  exit 1
+fi
+
+# Update Lambda function code
+aws lambda update-function-code \
+    --function-name $LAMBDA_NAME \
+    --zip-file fileb://$ZIP_FILE
+
+echo "✅ Lambda function updated successfully."
