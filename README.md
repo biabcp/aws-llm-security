@@ -1,10 +1,10 @@
 Secure LLM Deployment Framework on AWS
-📚 Overview
+Overview
 This repository provides a secure reference architecture and deployment framework for hosting Large Language Models (LLMs) on AWS. It focuses on protecting sensitive data, minimizing attack surfaces, enforcing strict access controls, and enabling safe model interactions in production environments.
 
 The project implements Zero Trust principles to safeguard against threats like prompt injection, data leakage, and misuse of LLMs.
 
-🔥 Key Features
+Key Features
 Private VPC deployment of LLM APIs (no public access)
 
 IAM least privilege access policies for users, services, and applications
@@ -21,12 +21,12 @@ Secrets securely stored in AWS Secrets Manager
 
 GuardDuty integration for threat detection and anomaly monitoring
 
-🏗️ Architecture Diagram
+Architecture Diagram
 
 (For a full threat model analysis, see docs/threat_model.md.)
 
-🚀 Quick Start
-📋 Prerequisites
+Quick Start
+Prerequisites
 AWS CLI configured
 
 Terraform installed
