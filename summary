@@ -1,0 +1,7 @@
+What This Lambda Does:
+Receives incoming API Gateway event with a "prompt" in the body.
+Validates that a prompt exists.
+Scans the prompt using regex for suspicious patterns (prompt injection signs).
+Blocks suspicious prompts (HTTP 403).
+Approves safe prompts (HTTP 200, returns prompt back).
+Logs everything for security and auditability (important for real-world use).
