@@ -1,0 +1,8 @@
+Zip it:
+cd lambda
+zip input_validator.zip input_validator.py
+
+:Run Terraform
+cd terraform
+terraform init
+terraform apply
