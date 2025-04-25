@@ -1,0 +1,9 @@
+output "api_gateway_invoke_url" {
+  description = "Invoke URL for the deployed API Gateway endpoint"
+  value       = "${aws_api_gateway_deployment.llm_deployment.invoke_url}/${aws_api_gateway_deployment.llm_deployment.stage_name}/validate"
+}
+
+output "s3_bucket_name" {
+  description = "S3 bucket name used for secure LLM logs and prompts"
+  value       = aws_s3_bucket.secure_llm_bucket.bucket
+}
