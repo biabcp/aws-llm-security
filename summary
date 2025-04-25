@@ -1,0 +1,8 @@
+What This Terraform Does:
+Creates secure networking (VPC, Subnets)
+Deploys a simple S3 bucket (encrypted at rest)
+Deploys a Lambda function (input validator)
+Builds an API Gateway front-end
+Adds permissions and basic Zero Trust IAM
+Sets up minimal outputs for easy use
+
